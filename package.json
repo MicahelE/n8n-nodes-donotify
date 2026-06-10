@@ -1,0 +1,65 @@
+{
+  "name": "n8n-nodes-donotify",
+  "version": "0.1.0",
+  "description": "n8n community node for DoNotify — schedule and place automated voice-call reminders.",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "donotify",
+    "reminder",
+    "voice call",
+    "calendar",
+    "notifications"
+  ],
+  "license": "MIT",
+  "homepage": "https://donotifys.com",
+  "author": {
+    "name": "Michael Etokakpan",
+    "email": "bryan@xbigtech.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MicahelE/n8n-nodes-donotify.git"
+  },
+  "engines": {
+    "node": ">=20.15"
+  },
+  "packageManager": "npm@10.9.3",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials",
+    "lintfix": "eslint nodes credentials --fix",
+    "prepublishOnly": "npm run build && npm run lint"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/DoNotifyApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/DoNotify/DoNotify.node.js"
+    ]
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.3",
+    "gulp": "^5.0.0",
+    "n8n-workflow": "*",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}
