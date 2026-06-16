@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-donotify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n community node for DoNotify — schedule and place automated voice-call reminders.",
   "keywords": [
     "n8n-community-node-package",
@@ -15,7 +15,7 @@
   "homepage": "https://donotifys.com",
   "author": {
     "name": "Michael Etokakpan",
-    "email": "bryan@xbigtech.com"
+    "email": "imohgenius@yahoo.com"
   },
   "repository": {
     "type": "git",
